@@ -1,0 +1,589 @@
+/* Basic Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #f5f5f5;
+
+}
+*{
+    font-family: "Raleway";
+}
+
+.Final{
+    margin: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.Details {
+    width: 350px;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Upper Section */
+
+.name {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.mail {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0;
+}
+
+.stud{
+    display: inline;
+    font-size: 16px;
+    color: #EB4335;
+    margin-right: 10px;
+}
+.pts{
+    display: inline;
+    font-size: 16px;
+}
+
+.photo {
+    float: left;
+    border-radius: 50%;
+    margin-right: 20px;
+    height: 150px;
+}
+
+.name-input, .email-input {
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    width: 100%;
+    outline: none;
+    margin: 2px 0;
+    background: transparent;
+    color: #333;
+    cursor: not-allowed;
+}
+
+.edit, .save {
+    border-radius: 15px;
+    border: 2px solid #4DA1A9;
+    height: 25px;
+    width: 60px;
+    margin-left: auto;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.save.hidden {
+    display: none;
+}
+
+/* Data Section */
+.data .row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.label {
+    font-weight: bold;
+    color: #333;
+}
+
+.value-input {
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #666;
+    text-align: right;
+    width: 60%;
+    cursor: not-allowed;
+}
+
+textarea.note-content {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 8px;
+    resize: none;
+    outline: none;
+    background: transparent;
+    color: #333;
+    cursor: not-allowed;
+}
+/*event*/
+
+.events-container {
+    width: 85%;
+    margin-left: 50px;
+}
+
+/* Section Styles */
+.section {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #d6e7e5;
+}
+
+.past-events {
+    background-color: #ffffff;
+}
+
+.section-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+
+/* Card Styles */
+.cards {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.x{
+    background-color: #4DA1A9;
+}
+.y{
+    background-color: whitesmoke;
+}
+.card {
+    
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    width: calc(33.333% - 10px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.event-image {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.event-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Add Event Card */
+.add-event {
+    background-color: #cce9e7;
+    border: 2px dashed #4da1a9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.add-event p {
+    font-size: 14px;
+    color: #4da1a9;
+    font-weight: bold;
+}
+
+.add-button {
+    background-color: #4da1a9;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/*Calender*/
+
+.CAL{
+    margin-top: 50px;
+}
+
+.calendar-container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    padding: 20px;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.calendar-header h2 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.month-selector {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+button {
+    background: none;
+    border: none;
+    font-size: 16px;
+    color: #555;
+    cursor: pointer;
+}
+
+button:hover {
+    color: #000;
+}
+
+.days-row {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    margin-bottom: 10px;
+    text-align: center;
+    color: #333;
+    font-weight: bold;
+    font-size: 14px;
+    
+}
+
+.dates-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+
+.date {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #eaeaea;
+    color: #555;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.date:hover {
+    background-color: #d6d6d6;
+}
+
+/*nav*/
+.navbar {
+    height: 60px;
+    background-color: #4DA1A9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+.search-bar {
+    position: relative;
+    width: 400px;
+}
+
+
+.search-input {
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    padding-right: 40px;
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: #269ea9;
+    border: 3px solid #269ea9;
+}
+
+.searchImg {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    pointer-events: none;
+}
+
+.user-menu {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.user-icon {
+    height: 30px;
+    width: 30px;
+}
+
+.menu {
+    height: 20px;
+    width: 30px;
+    margin-right: 50px;
+    background-color: #4DA1A9;
+    border: 0;
+}
+
+/* Sliding Menu */
+.sliding-menu {
+    position: fixed;
+    top: 0;
+    right: -300px; 
+    width: 300px;
+    height: 100%;
+    background-color: #ffffff;
+    box-shadow: -4px 0 8px rgba(0, 0, 0, 0.2);
+    transition: right 0.3s ease; 
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+}
+
+.sliding-menu-header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 15px;
+    background-color: #4DA1A9;
+}
+
+.close-menu {
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.menu-options {
+    list-style: none;
+    padding: 20px;
+    margin: 0;
+}
+
+.menu-options li {
+    margin: 15px 0;
+}
+
+.menu-options a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    transition: color 0.2s ease;
+}
+
+.menu-options a:hover {
+    color: #4DA1A9;
+}
+
+
+/*footer*/
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.footer {
+    background-color: #2e7373;
+    color: white;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 0.5fr; /* Allocate 2/3 space for main content and 1/3 for quick-links */
+    grid-template-rows: auto auto auto; /* Adjust row layout */
+
+    align-items: center; /* Center align content vertically */
+}
+
+
+.log {
+    height: 70px;
+}
+
+.overall {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    grid-column: 1; /* First column */
+    grid-row: 1; /* First row */
+}
+
+.contact {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    grid-column: 1; /* First column */
+    grid-row: 2; /* Second row */
+    font-size: 16px; /* Adjust font size */
+}
+
+#fir {
+    grid-column: 2; /* Place in the second column */
+    grid-row: 1; /* First row */
+    font-weight: bold;
+    font-size: 24px;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+#sec {
+    margin-top: 0;
+    grid-column: 3; /* Place in the third column */
+    grid-row: 1; /* First row */
+    font-weight: bold;
+    font-size: 24px;
+    text-align: right; /* Align text to the right */
+    margin-top: 0; /* Remove any extra spacing */
+}
+
+.quick-links {
+    grid-column: span 2; /* Right column */
+    grid-row: span 2; /* Span all rows */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.quick-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px; /* Reduce size slightly */
+    padding: 5px 10px;
+    background-color: #397f7f;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.quick-links a:hover {
+    background-color: #469191;
+}
+
+.rights {
+    grid-column: 1; /* Stretch across both columns */
+    grid-row: 3;
+    text-align: left;
+    font-size: 14px;
+    margin-top: 0px; /* Add spacing */
+}
+
+.footer h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    margin-top: 0;
+}
+
+.footer .xy {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.contact span {
+    display: flex;
+    align-items: center;
+}
+
+.contact span img {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        grid-template-columns: 1fr; /* Single column */
+        grid-template-rows: auto auto auto auto auto; /* Stack all sections */
+        text-align: center;
+        gap: 10px;
+    }
+
+    .quick-links {
+        grid-column: 1;
+        grid-row: 4; /* Place below other sections */
+        align-items: center; /* Center align quick links */
+    }
+
+    .rights {
+        grid-row: 5; /* Move below quick-links */
+        font-size: 12px;
+    }
+
+    .footer .ran {
+        grid-row: 3; /* Move to the center */
+    }
+
+    .contact span img {
+        margin-bottom: 0;
+    }
+}
+
+/* Highlighted date style in the calendar */
+.date.highlighted {
+    background-color: #4DA1A9;
+    color: white;
+    font-weight: bold;
+    border-radius: 50%; /* Optional for circular effect */
+}
+
+/* Animation for buttons */
+button {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+    background-color: #4DA1A9;
+    color: white;
+}
+
+/* Save and edit button styles */
+.edit, .save {
+    transition: background-color 0.3s ease;
+}
+
+.edit:hover {
+    background-color: #4DA1A9;
+    color: white;
+}
+
+.save.hidden {
+    display: none;
+}
