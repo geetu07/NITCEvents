@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UserPage</title>
+    <link href="./user.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="./events.html">
+            <div class="search-bar" id="searchBarContainer">
+                <input class="search-input" id="searchInput" placeholder="Search away!">
+                <img class="searchImg" src="./images/search.png" alt="Search">
+            </div>
+        </a>
+        
+        <div class="user-menu">
+            <img src="./images/Group 3.png" alt="login/register icon" class="user-icon">
+            <button class="menu" id="menuButton">
+            <img src="./images/Vector.png" alt="menu" ></button>
+        </div>    
+    </div>
+
+    <div class="sliding-menu" id="slidingMenu">
+        <div class="sliding-menu-header">
+            <button class="close-menu" id="closeMenuButton">&times;</button>
+        </div>
+        <ul class="menu-options">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./events.html">Events</a></li>
+            <li><a href="./gallery.html">Gallery</a></li>
+            <li><a href="./user.html" >UserPage</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
+            
+        </ul>
+    </div>
+
+
+<div class="Final">
+    <div class="USER">
+
+    <div class="Details">
+        <!-- Upper Section -->
+        <div class="upper">
+            <img class="photo" src="./images/photo.png" alt="User Photo">
+            <div class="det">
+                <input type="text" id="name" class="name-input" value="Angela Yu" readonly>
+                <input type="email" id="email" class="email-input" value="angela#123@gmail.com" readonly>
+            </div>
+            <p class="stud">Student</p>
+            <p class="pts">123 Points<br></p>
+            <button class="edit" id="editBtn" onclick="toggleEdit()">Edit</button>
+            <button class="save hidden" id="saveBtn" onclick="saveData()">Save</button>
+        </div>
+
+        <hr>
+ 
+        <!-- Data Section -->
+        <div class="data">
+            <div class="row">
+                <span class="label">User name:</span>
+                <input type="text" id="username" class="value-input" value="Angela123" readonly>
+            </div>
+            <div class="row">
+                <span class="label">Phone:</span>
+                <input type="tel" id="phone" class="value-input" value="+123 456 7890" readonly>
+            </div>
+            <div class="row">
+                <span class="label">Sex:</span>
+                <select id="sex" class="value-input" disabled>
+                    <option value="Female" selected>Female</option>
+                    <option value="Male">Male</option>
+                </select>
+            </div>
+            <div class="row">
+                <span class="label">DOB:</span>
+                <input type="date" id="dob" class="value-input" value="1990-12-31" readonly>
+            </div>
+            <div class="row">
+                <span class="label">Skills:</span>
+                <input type="text" id="skills" class="value-input" value="Python, JavaScript, React" readonly>
+            </div>
+            <div class="row">
+                <span class="label">Interests:</span>
+                <input type="text" id="interests" class="value-input" value="Traveling, Blogging, Photography" readonly>
+            </div>
+        </div>
+
+        <!-- Notes Section -->
+        <div class="notes">
+            <span class="label">Notes:</span>
+            <textarea id="notes" class="note-content" readonly>Loves coding and creating user-friendly designs!</textarea>
+        </div>
+    </div>
+    </div>
+        <!--events--->
+        <div class="EVENT">
+        <div class="events-container">
+            <!-- Registered Events Section -->
+            <div class="section">
+                <h2 class="section-title">Registered Events</h2>
+                <div class="cards">
+                    <div class="card y">
+                        <img src="./images/card_img.png" alt="Event" class="event-image">
+                        <p class="event-title">Tathva</p>
+                        <p class="d">25 January</p>
+                    </div>
+                    <div class="card y">
+                        <img src="./images/card_img.png" alt="Event" class="event-image">
+                        <p class="event-title">Tathva</p>
+                        <p class="d">26 January</p>
+                    </div>
+                    <div class="card add-event">
+                        <p>Add your Event</p>
+                         <button class="add-button" onclick="window.location.href='./events.html';" >+</button>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Past Events Section -->
+            <div class="section past-events">
+                <h2 class="section-title">Past Events</h2>
+                <div class="cards">
+                    <div class="card x">
+                        <img src="./images/card_img.png" alt="Event" class="event-image">
+                        <p class="event-title">Tathva</p>
+                    </div>
+                    <div class="card x">
+                        <img src="./images/card_img.png" alt="Event" class="event-image">
+                        <p class="event-title">Tathva</p>
+                    </div>
+                    <div class="card x">
+                        <img src="./images/card_img.png" alt="Event" class="event-image">
+                        <p class="event-title">Tathva</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!--calender-->
+        <div class="CAL">
+        <div class="calendar-container">
+            <div class="calendar-header">
+                <h2>Calendar</h2>
+                <div class="month-selector">
+                    <button class="prev-month">&lt;</button>
+                    <span class="current-month">March 2025</span>
+                    <button class="next-month">&gt;</button>
+                </div>
+            </div>
+            <div class="calendar-body">
+                <div class="days-row">
+                    <div class="day">S</div>
+                    <div class="day">M</div>
+                    <div class="day">T</div>
+                    <div class="day">W</div>
+                    <div class="day">T</div>
+                    <div class="day">F</div>
+                    <div class="day">S</div>
+                </div>
+                <div class="dates-grid">
+                    <!-- Dates will be dynamically generated by JavaScript -->
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+
+<footer class="footer">
+    <div class="overall">
+        <img class="log" src="./images/cllglogo.png" alt="College Logo">
+        <div class="det">
+            <h4 class="h">National Institute of Technology Calicut</h4>
+            <p class="xy">NIT Campus P.O 673 601, Kozhikode, India.</p>
+        </div>
+    </div>
+    <div class="contact">
+        <h4>Contact Us</h4>
+        <span><img src="./images/ph.png" alt="Phone" > +91 1234567890</span>
+        <span><img src="./images/mail.png" alt="Email"> nitcevents@gmail.com</span>
+    </div>
+    <div class="ran">
+        <p id="fir">"Connecting NITC,</p>
+        <br>
+        <p id="sec">one event at a time."</p>
+    </div>
+    <div class="quick-links">
+        <h4>Quick Links</h4>
+        <a href="./index.html">Home</a>
+        <a href="./events.html">Events</a>
+        <a href="./NITCEvents_TermsAndConditions.pdf">Terms & Conditions</a>
+
+    </div>
+    <div class="rights">© 2025 NITCEvents. All rights reserved.</div>
+</footer>
+
+    <script src="./cal.js"></script>
+</body>
+</html>
+
+

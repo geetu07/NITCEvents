@@ -1,0 +1,551 @@
+/*nav*/
+.navbar {
+    height: 60px;
+    background-color: #4DA1A9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+.search-bar {
+    position: relative;
+    width: 400px; /* Set a width for the search bar */
+}
+
+.search-input {
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    padding-right: 40px; /* Add padding for the icon */
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: #269ea9;
+    border: 3px solid #269ea9;
+}
+
+.searchImg {
+    position: absolute;
+    top: 50%;
+    right: 15px; /* Place the icon inside the input field */
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    pointer-events: none; /* Prevent interaction with the icon */
+}
+
+.user-menu {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.user-icon {
+    height: 30px;
+    width: 30px;
+}
+
+.menu {
+    height: 20px;
+    width: 30px;
+    margin-right: 50px;
+    background-color: #4DA1A9;
+    border: 0;
+}
+
+/*body*/
+
+.body{
+    margin: 0;
+    background-color: #F6F4F0;
+
+
+}
+*{
+    font-family: "Raleway";
+
+}
+
+.head{
+    font-size: 65px;
+    font-weight: 400;
+    color: #2F686E;
+    margin-left: 69px;
+    margin-bottom: 20px ;
+}
+/* Dropdown Menu Styles */
+.dropdown-menu {
+    display: none; /* Initially hidden */
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-top: 10px;
+    padding: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Ensure it appears above other elements */
+    min-width: 150px;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px 15px;
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.2s ease;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f0f0f0;
+}
+
+/* Position the dropdown relative to the filter button */
+.xx {
+    position: relative;
+    display: flex;
+    gap: 20px;
+}
+.filte{
+border-color: #236060;
+color: #2F686E;
+border-radius: 10px;
+}
+
+
+.filter{
+        background: linear-gradient(90deg,#4DA1A9 0%,#73C0C8 100%);
+        border: none;
+        width: 150px;
+        height: 50px;
+        border-radius: 50px;
+        color: white;
+        margin-left: 69px;
+        margin-top: 0;
+        font-size: 23px;
+}
+
+.card {
+    width: 300px;
+    border: 1px solid #8A8A8A;
+    margin-right: 0;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 15px;
+    text-align: center;
+}
+
+.card-tag {
+    font-size: 12px;
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.card-title {
+    font-size: 20px;
+    color: #333;
+    margin: 5px 0;
+}
+
+.card-description {
+    font-size: 14px;
+    color: #666;
+    margin: 10px 0;
+}
+
+.card-footer {
+    padding: 15px;
+    text-align: center;
+
+}
+
+.card-button {
+    padding: 10px 20px;
+    font-size: 14px;
+    width: 200px;
+    color: #fff;
+    background-color: #2e7373;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+}
+
+.card-button:hover {
+    background-color: #236060;
+}
+.all{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 50px;
+    margin: 60px;
+}
+
+
+
+/*footer*/
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.footer {
+    background-color: #2e7373;
+    color: white;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 0.5fr; /* Allocate 2/3 space for main content and 1/3 for quick-links */
+    grid-template-rows: auto auto auto; /* Adjust row layout */
+
+    align-items: center; /* Center align content vertically */
+}
+
+.log {
+    height: 70px;
+}
+
+.overall {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    grid-column: 1; /* First column */
+    grid-row: 1; /* First row */
+}
+
+.contact {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    grid-column: 1; /* First column */
+    grid-row: 2; /* Second row */
+    font-size: 16px; /* Adjust font size */
+}
+
+#fir {
+    grid-column: 2; /* Place in the second column */
+    grid-row: 1; /* First row */
+    font-weight: 400;
+    font-size: 24px;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+#sec {
+    margin-top: 0;
+    grid-column: 3; /* Place in the third column */
+    grid-row: 1; /* First row */
+    font-weight: 400;
+    font-size: 24px;
+    text-align: right; /* Align text to the right */
+    margin-top: 0; /* Remove any extra spacing */
+}
+
+.quick-links {
+    grid-column: span 2; /* Right column */
+    grid-row: span 2; /* Span all rows */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.quick-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px; /* Reduce size slightly */
+    padding: 5px 10px;
+    background-color: #397f7f;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.quick-links a:hover {
+    background-color: #469191;
+}
+
+.rights {
+    grid-column: 1; /* Stretch across both columns */
+    grid-row: 3;
+    text-align: left;
+    font-size: 14px;
+    margin-top: 0px; /* Add spacing */
+}
+
+.footer h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    margin-top: 0;
+}
+
+.footer .x {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.contact span {
+    display: flex;
+    align-items: center;
+}
+
+.contact span img {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        grid-template-columns: 1fr; /* Single column */
+        grid-template-rows: auto auto auto auto auto; /* Stack all sections */
+        text-align: center;
+        gap: 10px;
+    }
+
+    .quick-links {
+        grid-column: 1;
+        grid-row: 4; /* Place below other sections */
+        align-items: center; /* Center align quick links */
+    }
+
+    .rights {
+        grid-row: 5; /* Move below quick-links */
+        font-size: 12px;
+    }
+
+    .footer .ran {
+        grid-row: 3; /* Move to the center */
+    }
+
+    .contact span img {
+        margin-bottom: 0;
+    }
+}
+
+
+/*Modals*/
+/* Modal styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000; /* Sit above everything */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5); /* Black with opacity */
+}
+
+.modal-content {
+    background-color: white;
+    margin: 10% auto; /* Center the modal */
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+}
+
+.modal-register {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4DA1A9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.modal-register:hover {
+    background-color: #236060;
+}
+
+
+/*adding events*/
+.add-event-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4DA1A9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px;
+}
+
+.popup-form {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.form-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.form-content h2 {
+    margin-bottom: 20px;
+}
+
+.form-content label {
+    display: block;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.form-content input,
+.form-content select,
+.form-content textarea {
+    width: 100%;
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.submit-event-btn,
+.close-popup-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-event-btn {
+    background-color: #4DA1A9;
+    color: white;
+}
+
+.close-popup-btn {
+    background-color: #ccc;
+    color: black;
+}
+
+.delete-card-btn {
+    padding: 5px 15px;
+    margin-top: 10px;
+    font-size: 14px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.delete-card-btn:hover {
+    background-color: #c0392b;
+}
+
+
+.sliding-menu {
+    position: fixed;
+    top: 0;
+    right: -300px; 
+    width: 300px;
+    height: 100%;
+    background-color: #ffffff;
+    box-shadow: -4px 0 8px rgba(0, 0, 0, 0.2);
+    transition: right 0.3s ease; 
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+}
+
+.sliding-menu-header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 15px;
+    background-color: #4DA1A9;
+}
+
+.close-menu {
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.menu-options {
+    list-style: none;
+    padding: 20px;
+    margin: 0;
+}
+
+.menu-options li {
+    margin: 15px 0;
+}
+
+.menu-options a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    transition: color 0.2s ease;
+}
+
+.menu-options a:hover {
+    color: #4DA1A9;
+}
+ 

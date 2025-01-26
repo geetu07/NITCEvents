@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <link href="./events.css" rel="stylesheet" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="./events.html">
+            <div class="search-bar" id="searchBarContainer">
+                <input class="search-input" id="searchInput" placeholder="Search away!">
+                <img class="searchImg" src="./images/search.png" alt="Search">
+            </div>
+        </a>
+        
+        <div class="user-menu">
+            <img src="./images/Group 3.png" alt="login/register icon" class="user-icon">
+            <button class="menu" id="menuButton">
+            <img src="./images/Vector.png" alt="menu" ></button>
+        </div>    
+    </div>
+
+    <div class="sliding-menu" id="slidingMenu">
+        <div class="sliding-menu-header">
+            <button class="close-menu" id="closeMenuButton">&times;</button>
+        </div>
+        <ul class="menu-options">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./events.html">Events</a></li>
+            <li><a href="./gallery.html">Gallery</a></li>
+            <li><a href="./user.html" >UserPage</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
+            
+        </ul>
+    </div>
+
+    <p class="head">IN THE HAPPENING...</p>
+    <div class="xx">
+        <button class="filter" id="filterButton">Filter by</button>
+        <select id="filterDropdown" class="filte">
+            <option value="all">All</option>
+            <option value="WORKSHOP">WORKSHOP</option>
+            <option value="SEMINAR">SEMINAR</option>
+            <option value="WEBINAR">WEBINAR</option>
+            <option value="CULTURAL">CULTURAL</option>
+            <option value="HACKATHON">HACKATHON</option>
+        </select>
+    </div>
+    
+
+<div class="all">
+<div class="card">
+    <div class="card-image">
+        <img src="./images/card_img.png" alt="Workshop">
+    </div>
+    <div class="card-content">
+        <p class="card-tag">WORKSHOP</p>
+        <h2 class="card-title">AI ML - An Introduction</h2>
+        <p class="card-description">Lorem ipsum dolor sit amet, hey hey onsectetur hellooo adipiscing elit.</p>
+    </div>
+    <div class="card-footer">
+        <button class="card-button" data-event="AI ML - An Introduction">REGISTER</button>
+        <button class="delete-card-btn">DELETE</button>
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-image">
+        <img src="./images/card_img.png" alt="Workshop">
+    </div>
+    <div class="card-content">
+        <p class="card-tag">WEBINAR</p>
+        <h2 class="card-title">Cloud Computing</h2>
+        <p class="card-description">Lorem ipsum dolor sit amet, hey hey onsectetur hellooo adipiscing elit.</p>
+    </div>
+    <div class="card-footer">
+        <button class="card-button" data-event="AI ML - An Introduction">REGISTER</button>
+        <button class="delete-card-btn">DELETE</button>
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-image">
+        <img src="./images/card_img.png" alt="Workshop">
+    </div>
+    <div class="card-content">
+        <p class="card-tag">CULTURAL</p>
+        <h2 class="card-title">Tathva Proshow</h2>
+        <p class="card-description">Lorem ipsum dolor sit amet, hey hey onsectetur hellooo adipiscing elit.</p>
+    </div>
+    <div class="card-footer">
+        <button class="card-button" data-event="AI ML - An Introduction">REGISTER</button>
+        <button class="delete-card-btn">DELETE</button>
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-image">
+        <img src="./images/card_img.png" alt="Workshop">
+    </div>
+    <div class="card-content">
+        <p class="card-tag">SEMINAR</p>
+        <h2 class="card-title">CyberSecurity</h2>
+        <p class="card-description">Lorem ipsum dolor sit amet, hey hey onsectetur hellooo adipiscing elit.</p>
+    </div>
+    <div class="card-footer">
+        <button class="card-button" data-event="AI ML - An Introduction">REGISTER</button>
+        <button class="delete-card-btn">DELETE</button>
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-image">
+        <img src="./images/hackathon.jpg" alt="Workshop">
+    </div>
+    <div class="card-content">
+        <p class="card-tag">HACKATHON</p>
+        <h2 class="card-title">CODEINIT() Hackathon</h2>
+        <p class="card-description">Lorem ipsum dolor sit amet, hey hey onsectetur hellooo adipiscing elit.</p>
+    </div>
+    <div class="card-footer">
+        <button class="card-button" data-event="AI ML - An Introduction">REGISTER</button>
+        <button class="delete-card-btn">DELETE</button>
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-image">
+        <img src="./images/card_img.png" alt="Workshop">
+    </div>
+    <div class="card-content">
+        <p class="card-tag">WORKSHOP</p>
+        <h2 class="card-title">Web-Dev</h2>
+        <p class="card-description">Lorem ipsum dolor sit amet, hey hey onsectetur hellooo adipiscing elit.</p>
+    </div>
+    <div class="card-footer">
+        <button class="card-button" data-event="AI ML - An Introduction">REGISTER</button>
+        <button class="delete-card-btn">DELETE</button>
+    </div>
+</div>
+
+
+</div>
+
+<div id="eventModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 id="modalTitle"></h2>
+        <p id="modalDescription">Detailed information about the event will be displayed here.</p>
+        <button class="modal-register">Confirm Registration</button>
+    </div>
+</div>
+
+<button class="add-event-btn" id="addEventButton">+ Add Event</button>
+
+<div id="eventFormPopup" class="popup-form">
+    <div class="form-content">
+        <h2>Add New Event</h2>
+        <form id="addEventForm">
+            <label for="eventTag">Tag:</label>
+            <select id="eventTag" required>
+                <option value="WORKSHOP">WORKSHOP</option>
+                <option value="SEMINAR">SEMINAR</option>
+                <option value="WEBINAR">WEBINAR</option>
+            </select>
+
+            <label for="eventTitle">Title:</label>
+            <input type="text" id="eventTitle" placeholder="Event Title" required />
+
+            <label for="eventDescription">Description:</label>
+            <textarea id="eventDescription" placeholder="Event Description" required></textarea>
+
+            <label for="eventImage">Image URL:</label>
+            <input type="text" id="eventImage" placeholder="Paste image URL" required />
+
+            <button type="submit" class="submit-event-btn">Add Event</button>
+            <button type="button" id="closePopupButton" class="close-popup-btn">Cancel</button>
+        </form>
+    </div>
+</div>
+
+
+<footer class="footer">
+    <div class="overall">
+        <img class="log" src="./images/cllglogo.png" alt="College Logo">
+        <div class="det">
+            <h4>National Institute of Technology Calicut</h4>
+            <p class="x">NIT Campus P.O 673 601, Kozhikode, India.</p>
+        </div>
+    </div>
+    <div class="contact">
+        <h4>Contact Us</h4>
+        <span><img src="./images/ph.png" alt="Phone" > +91 1234567890</span>
+        <span><img src="./images/mail.png" alt="Email"> nitcevents@gmail.com</span>
+    </div>
+    <div class="ran">
+        <p id="fir">"Connecting NITC,</p>
+        <br>
+        <p id="sec">one event at a time."</p>
+    </div>
+    <div class="quick-links">
+        <h4>Quick Links</h4>
+        <a href="./index.html">Home</a>
+        <a href="./events.html">Events</a>
+        <a href="./NITCEvents_TermsAndConditions.pdf">Terms & Conditions</a>
+
+    </div>
+    <div class="rights">© 2025 NITCEvents. All rights reserved.</div>
+</footer>
+<script src="./events.js"></script>
+</body>
+</html>

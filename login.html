@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="./login.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="left-panel">
+            <div class="placeholder">
+                <img class="pho" src="./images/signin.jpeg" alt="College photo">
+            </div>
+        </div>
+        <div class="right-panel">
+            <h1>Welcome To</h1>
+            <div class="tab-switch">
+                <a href="#" class="active">Sign In</a>
+                <a href="#" class="signup">Sign Up</a>
+            </div>
+            <form id="loginForm">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Email" required>
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Password" required>
+                
+                <p id="error-message" style="color: red; font-size: 14px;"></p>
+                
+                <button type="submit" class="sign-in-btn">Sign In</button>
+            </form>
+            <hr>
+            <button class="google-sign-in">
+                <img src="./images/Google.png" alt="Google logo" class="google-logo">
+                Sign in with Google
+            </button>
+        </div>
+    </div>
+    <script src="./login.js"></script>
+</body>
+</html>
