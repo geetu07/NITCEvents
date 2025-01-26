@@ -1,1 +1,10 @@
 # NITCEvents
+PROBLEM STATEMENT
+Our campus, though it hosts various fun and insightful events, lacks a proper communication mechanism/organization of events at one place. The messy WhatsApp forwards don’t make it any better, and thus arises the need for a proper event management system, which has all the events at one place. There is lack of centralization, redundancy and a cumbersome registration process. This is the issue we are addressing.
+METHODOLOGY
+Tech Stack : HTML, CSS, JS
+BRIEF EXPLANATION
+We first designed a Figma file to get an idea of how the frontend should be. Then, we coded the pages accordingly using HTML and CSS, finally adding JS for the extended functionalities. The home page is organized, with the most popular (registered) upcoming events, a leaderboard and an FAQs section. The login/signup page on successful action directs the user to the dashboard, with all the upcoming and past events, along with profile details and a calendar. We have a gallery of past events along with contact cards for different domains of activities like events, hackathons and the like.
+To come to the key findings through this project, the design of the website plays a really important role, along with seamless functionality. Presenting users with a better alternative make their lives both easier and organized. This project was a really good way to work on improving our skills and focusing on learning more.
+USER SELLING PROPOSITION
+NITCEvents is an all-in-one Event Hub for NITC, something which has never existed to this point. It offers a single, centralized platform where students can discover, register for and track all events effortlessly. Users can personalize their experience, through a user-friendly interface, and the leaderboard provides a gamified experience, benefitting active participants. Users can easily stay updated on deadlines and schedule changes without the hassle of manual tracking. The project eliminates communication gaps between organizers and participants, hence easing the process and making it a fu journey!
